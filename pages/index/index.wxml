@@ -1,0 +1,25 @@
+<scroll-view>
+  <view class="main">
+      <block wx:if="{{isLoading}}">
+        <view class="loading">
+          <text>加载中...</text>
+        </view>
+      </block>
+
+      <block wx:else>
+          <view wx:if="{{data.length == 0}}" class="noData">
+            <image src="../../images/no_data.png"></image>
+            <text>没有数据</text>
+          </view>
+
+          <view wx:if="{{data.length > 0}}" 
+              class="box" 
+              wx:for="{{data}}" 
+              wx:key="id" 
+              bindtap="openImg"
+              data-url="{{item.url}}">
+              <image src="{{item.url}}"></image>
+          </view>
+      </block>
+  </view>
+</scroll-view>

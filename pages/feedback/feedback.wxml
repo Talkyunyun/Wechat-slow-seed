@@ -1,0 +1,15 @@
+<scroll-view>
+	<form>
+		<view class="input_box">
+			<input placeholder="姓名" auto-focus />
+		</view>
+
+		<view class='input_box'>
+			<textarea placeholder="请输入您的宝贵意见。" />
+		</view>
+
+		<view class='submit_box'>
+			<button type="primary"> 提交 </button>
+		</view>
+	</form>
+</scroll-view>

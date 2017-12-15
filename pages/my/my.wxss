@@ -1,0 +1,21 @@
+.user_main{
+  	text-align: center;
+  	margin-top: 100rpx;
+}
+.user_main .face_box{
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto 10rpx auto;
+	border:10rpx solid #fff;
+}
+.user_main .face_box image{
+  	width: 100%;
+  	height: 100%;
+}
+.user_main .user_name{
+  	text-align: center;
+  	font-size: 40rpx;
+	font-weight: bolder
+}
